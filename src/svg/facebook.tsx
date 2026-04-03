@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const Facebook = (props: SVGProps<SVGSVGElement>) => (
+export const Facebook = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 0 666.667 666.667">
     <defs>
       <clipPath id="facebook_icon__a" clipPathUnits="userSpaceOnUse">
@@ -35,4 +35,3 @@ const Facebook = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export { Facebook };

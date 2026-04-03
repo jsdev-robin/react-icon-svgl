@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const XformerlyTwitter = (props: SVGProps<SVGSVGElement>) => (
+export const XformerlyTwitter = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} fill="none" viewBox="0 0 1200 1227">
     <path
       fill="#fff"
@@ -9,4 +9,4 @@ const XformerlyTwitter = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export { XformerlyTwitter };
+

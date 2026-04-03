@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const Nodejs = (props: SVGProps<SVGSVGElement>) => (
+export const Nodejs = (props: SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     viewBox="0 0 256 292"
@@ -76,4 +76,4 @@ const Nodejs = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export { Nodejs };
+

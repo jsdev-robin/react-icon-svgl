@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const Instagram = (props: SVGProps<SVGSVGElement>) => (
+export const Instagram = (props: SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -98,4 +98,4 @@ const Instagram = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export { Instagram };
+

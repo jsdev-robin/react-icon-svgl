@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const NPM = (props: SVGProps<SVGSVGElement>) => (
+export const NPM = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 0 2500 2500">
     <path fill="#c00" d="M0 0h2500v2500H0z" />
     <path
@@ -10,4 +10,4 @@ const NPM = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export { NPM };
+

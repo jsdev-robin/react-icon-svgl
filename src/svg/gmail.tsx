@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const Gmail = (props: SVGProps<SVGSVGElement>) => (
+export const Gmail = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 49.4 512 399.42">
     <g fill="none" fillRule="evenodd">
       <g fillRule="nonzero">
@@ -29,5 +29,3 @@ const Gmail = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-
-export { Gmail };

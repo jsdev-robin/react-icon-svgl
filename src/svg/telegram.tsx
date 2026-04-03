@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const Telegram = (props: SVGProps<SVGSVGElement>) => (
+export const Telegram = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 0 256 256" preserveAspectRatio="xMidYMid">
     <defs>
       <linearGradient id="telegram__a" x1="50%" x2="50%" y1="0%" y2="100%">
@@ -19,4 +19,4 @@ const Telegram = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export { Telegram };
+

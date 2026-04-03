@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-const Meta = (props: SVGProps<SVGSVGElement>) => (
+export const Meta = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} preserveAspectRatio="xMidYMid" viewBox="0 0 256 171">
     <defs>
       <linearGradient
@@ -41,4 +41,4 @@ const Meta = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export { Meta };
+
