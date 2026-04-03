@@ -1,17 +1,17 @@
 {
   "name": "react-icon-svgl",
- "private": false,
-  "version": "1.0.1",
+  "private": false,
+  "version": "1.0.6",
   "type": "module",
   "files": [
     "dist",
     "README.md"
   ],
-  "module": "./dist/data-grid.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/data-grid.js",
+      "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
     "./style.css": "./dist/index.css"

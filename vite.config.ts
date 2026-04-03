@@ -1,19 +1,16 @@
-import { defineConfig } from 'vite'
-import react, { reactCompilerPreset } from '@vitejs/plugin-react'
-import babel from '@rolldown/plugin-babel'
-import dts from 'vite-plugin-dts';
-import path from 'path';
+import react from '@vitejs/plugin-react';
 import { resolve } from 'node:path';
-
-
+import path from 'path';
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    babel({ presets: [reactCompilerPreset()] }),
-     dts({
+    dts({
       tsconfigPath: './tsconfig.app.json',
+      rollupTypes: true,
     }),
   ],
   resolve: {
@@ -21,12 +18,12 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-    build: {
+  build: {
     cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'react-icon-svgl',
-      fileName: 'data-grid',
+      fileName: 'index',
       formats: ['es', 'cjs'],
     },
     rolldownOptions: {
@@ -36,7 +33,8 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDOM',
         },
+        preserveModules: false,
       },
     },
   },
-})
+});
