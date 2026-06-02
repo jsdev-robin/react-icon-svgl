@@ -11,3 +11,4 @@ export { Telegram } from './svg/telegram';
 export { WhatsApp } from './svg/whatsapp';
 export { XformerlyTwitter } from './svg/x';
 export { YouTube } from './svg/youtube';
+export { TikTok } from './svg/tiktok';
